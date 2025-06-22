@@ -32,7 +32,7 @@ A simple reminders app that lets you add/remove, check off and set the time of y
 And a silly vessel creator.  
 <img src="https://raw.githubusercontent.com/imthosea/images/refs/heads/master/kswing/v1/example-vessel.png" alt="WHAT VESSEL WILL YOU MAKE?" width="300">  
 
-These are located in the `example` directory and use [FlatLaf](https://github.com/JFormDesigner/FlatLaf) as their look and feel. They're also available as a runnable jar on GitHub releases!
+These are located in the `example` directory and use [FlatLaf](https://github.com/JFormDesigner/FlatLaf) as their look and feel. They're also available as a [runnable jar](https://github.com/imthosea/libkswing/releases/download/v1.0.0/libkswing-example-1.0.0.jar) on GitHub releases!
 
 ## Licensing
 The library and the examples are under a very liberal BSD-2 clause license. See the LICENSE file for more.
