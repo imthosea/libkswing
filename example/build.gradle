@@ -1,0 +1,37 @@
+plugins {
+    id "java"
+    id "org.jetbrains.kotlin.jvm"
+    id "application"
+    id "com.gradleup.shadow" version "9.0.0-beta15"
+}
+
+repositories {
+    mavenCentral()
+}
+
+version = rootProject.version
+
+kotlin {
+    jvmToolchain(17)
+}
+
+dependencies {
+    implementation rootProject
+    implementation "com.formdev:flatlaf:3.6"
+}
+
+application {
+    mainClass = "me.thosea.kswing.example.ExampleMainKt"
+}
+
+jar {
+    archiveFileName = "libkswing-example-${version}-no_deps.jar"
+}
+
+shadowJar {
+    minimize {
+        exclude(dependency("com.formdev:.*:.*"))
+    }
+    archiveFileName = "libkswing-example-${version}.jar"
+    doLast { tasks.jar.archiveFile.get().asFile.delete() }
+}
