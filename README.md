@@ -45,7 +45,7 @@ Add the maven repo:
 ```kotlin
 maven {
 	name = "teamcelestial"
-	url = uri("https://maven.teamcelestial.org/public")
+	url = "https://maven.teamcelestial.org/public"
 }
 ```
 </details>
@@ -75,9 +75,7 @@ Then add the dependency:
 <summary>Gradle (Kotlin)</summary>
 
 ```kotlin
-maven {
-	implementation("me.thosea:libkswing:<version>")
-}
+implementation("me.thosea:libkswing:<version>")
 ```
 </details>
 <details>
