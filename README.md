@@ -38,51 +38,19 @@ These are located in the `example` directory and use [FlatLaf](https://github.co
 The library and the examples are under a very liberal BSD-2 clause license. See the LICENSE file for more.
 
 ## Installing
-Add the maven repo:
+The library is available on maven central.
 <details open>
 <summary>Gradle (Kotlin)</summary>
 
 ```kotlin
-maven {
-	name = "teamcelestial"
-	url = "https://maven.teamcelestial.org/public"
-}
+implementation("io.github.imthosea:libkswing:<version>")
 ```
 </details>
 <details>
 <summary>Gradle (Groovy)</summary>
 
 ```groovy
-maven {
-    name "teamcelestial"
-    url "https://maven.teamcelestial.org/public"
-}
-```
-</details>
-<details>
-<summary>Maven</summary>
-
-```xml
-<repository>
-  <id>teamcelestial</id>
-  <url>https://maven.teamcelestial.org/public</url>
-</repository>
-```
-</details>
-
-Then add the dependency:
-<details open>
-<summary>Gradle (Kotlin)</summary>
-
-```kotlin
-implementation("me.thosea:libkswing:<version>")
-```
-</details>
-<details>
-<summary>Gradle (Groovy)</summary>
-
-```groovy
-implementation "me.thosea:libkswing:<version>"
+implementation "io.github.imthosea:libkswing:<version>"
 ```
 </details>
 <details>
@@ -90,11 +58,11 @@ implementation "me.thosea:libkswing:<version>"
 
 ```xml
 <dependency>
-  <groupId>me.thosea</groupId>
+  <groupId>io.github.imthosea</groupId>
   <artifactId>libkswing</artifactId>
   <version>version</version>
 </dependency>
 ```
 </details>
 
-Find the latest version here: https://maven.teamcelestial.org/#/public/me/thosea/libkswing/
+The latest version is `1.0.0`.
